@@ -62,22 +62,45 @@ html {
     transform: rotate(4320deg)
 }
 
+
 .forward {
-    background-color: red;
-}
-
-.backward {
-    background-color: green;
-}
-
-.button {
-    line-height: 100px;
+    background-color: green; 
+    width: 6em;
+    line-height: 6em;
     text-align: center;
     border-radius: 50%;
     text-decoration: none;
     color: #fff;
+    text-align: center;
+    display: inline-block;
+    transition: opacity 2s linear;
 }
-    
 
+.backward {
+    background-color: red;
+    width: 6em;
+    line-height: 6em;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    transition: opacity 2s linear;
+}
+
+.button {
+    text-align: center;
+}
+
+.backward:hover {
+    color: black;
+    background-color: white;   
+}
+
+.forward:hover {
+    color: black;
+    background-color: white;   
+}
     
     
