@@ -27,22 +27,57 @@ html {
   height: 300px;
   width: 300px;
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto; 
 }
 
 .hand {
   width: 14px;
   position: absolute;
-  bottom: calc(50% - 7px);
+  bottom: calc(50%);
   left: calc(50% - 7px);
+  transition: all 8s linear;
+  transform-origin: bottom center;
+}
+
+.clock-face:hover .hand-hour {
+  transform: rotate(360deg) 
+}
+
+.clock-face:hover .hand-minute {
+  transform: rotate(4320deg)
 }
 
 .center {
   width: 28px;
   position: absolute;
   bottom: calc(50% - 14px);
-  left: calc(50% - 14px);
-  
+  left: calc(50% - 14px); 
 }
 
-  
+.clock-face:target .hand-hour {
+    transform: rotate(360deg)
+}
+    
+.clock-face:target .hand-minute {
+    transform: rotate(4320deg)
+}
+
+.forward {
+    background-color: red;
+}
+
+.backward {
+    background-color: green;
+}
+
+.button {
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #fff;
+}
+    
+
+    
+    
