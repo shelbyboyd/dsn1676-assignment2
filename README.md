@@ -1,2 +1,2 @@
-# dsn1676-assignment2
-clockface, transitions
+# dsn1676-week-1
+Review all the things!
